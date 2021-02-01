@@ -1,0 +1,203 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta type="UTF-8">
+<style>
+body{
+	background-color:black;
+	text-align:center;
+	background-repeat:no-repeat;
+	background-size:auto;
+	color:yellow;
+	font-weight:normal;
+	font-size:15px;
+	font-family:Microsoft Sans Serif;      
+}
+
+button{
+	background-color:yellow;
+	border-color:yellow;
+	border-width:1px;
+	color:black;
+	font-size:16px;
+	padding:16px 30px;
+	font-weight:lighter;  
+}
+
+button:hover{
+background-color:black;
+color:yellow;
+border-color:yellow;
+border-width:1px;
+-webkit-transition:0.3s; 
+}
+
+h1{
+	text-align:center; 
+}
+
+.dropdown{
+	position:relative;
+	display:inline-block; 
+}
+
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background:yellow;
+	border-color:yellow;
+	min-width:160px;
+	box-shadow:1px 1px 2px;
+	padding:10px 14px;
+	z-index:1;     
+}
+
+.dropdown:hover .dropdown-content{
+	display:block; 
+}
+
+.topnav{
+	overflow:hidden;
+	background-color:black;   
+}
+
+.topnav a{
+	float:left;
+	color:yellow;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+	font-size:12px;  
+}
+
+.topnav a:hover{
+	background-color:yellow;
+	border-color:yellow;
+	color:black;
+	-webkit-transition:0.3s; 
+}
+
+.topnav a.active{
+	background-color:black;
+	border-color:yellow;
+	color:yellow; 
+}
+
+
+#codSidenav a{
+	/* (registered) Dew@dewmortal.org */
+	position:absolute;
+	left:-92px;
+	transition:0.2s;
+	padding:15px;
+	width:100px;
+	text-decoration:none;
+	font-size:15px;
+	color:black;
+	/* no border-radius required as the UI is rectangular(sharped)*/
+	border-radius:0px 0px 0px 0px;
+	border-right:yellow;   
+}
+#codSidenav a:hover{
+	left:0;
+	background-color:black;
+	color:yellow; 
+}
+
+#Log-in{
+	/* there is a difference of 60px in every subsequent element below in top:*/
+	top:70px;
+	background-color:yellow; 
+}
+
+#Discover-Activision{
+    top:130px;
+    background-color:yellow;  
+}
+
+#Careers{
+	top:190px;
+	background-color:yellow; 
+}
+
+#About{
+	top:250px;
+	background-color:yellow; 
+}
+
+#Terms-of-Service{
+	top:310px;
+	background-color:yellow; 
+}
+#Light-Theme{
+	top:370px;
+	background-color:yellow;
+}
+ #Facebook{
+ 	top:410px;
+ 	background-color:blue;
+ }
+</style>
+</head>
+	<title>
+		Call of Duty
+	</title>
+<body alink="black" link="black" vlink="black">
+	<div style="margin-left:60px;">
+	<div class="topnav">
+			<a class="active" href="#">Activision</a>
+			<a href="#news">News</a>
+			<a href="#Strategy Games">Strategy games</a>
+			<a href="#reviews">Reviews</a>
+			<a href="#Locations">Locations</a>
+			<a style="float:right;" href="https://www.activision.com/games" target="new">Download Games</a>
+		</div>
+	</div>
+	<img src="Call of Duty.png" height="100px" width="200px">
+	<br>
+	<br>
+	<div id="codSidenav" class="sidenav">
+<a href="#" id="Log-in">Login/Sign-up</a>
+<a href="#" id="Discover-Activision">Discover</a>
+<a href="#" id="Careers">Careers</a>
+<a href="#" id="About">About</a>
+<a href="#" id="Terms-of-Service">Terms of Service</a>
+<a href="#" id="Facebook" style="float:right;">Facebook</a>
+</div>
+<button type="button" onclick="myFunction()">Switch to Light Theme</button>
+<script>
+function myFunction()
+{
+	document.body.style.backgroundColor="white";
+	document.body.style.color="black";
+}
+</script>
+		<br>
+		<div style="margin-left:80px;">
+	<p><h1>The Official Call of Duty,now on Mobile</h1></p>
+	<br>
+	<br>
+<ifram width="700px" height="500px" src="https://squads.callofduty.com/mobile" align="center"></iframe>
+		<br>
+		<br>
+<a href="https://www.youtube.com/watch?v=n4b8FRUDNZo"><button>Watch on Youtube</button></a>
+<br>
+<br>
+<div class="dropdown">
+	<span><button style="padding:15px 20px">More from Activision</button></span>
+	<div class="dropdown-content">
+		<p><a href="https://www.activision.com/games/call-of-duty/warzone">Call of Duty: Warzone</a></p>
+		<p><a href="https://www.activision.com/games/call-of-duty/call-of-duty-black-ops" target="new">Call of Duty: Black Ops</a></P>
+			<p><a href="https://www.activision.com/games/call-of-duty/call-of-duty-black-ops-2" target="new">Call of Duty: Black Ops II</a></p>
+			<p><a href="https://www.activision.com/games">More Games</a></p>
+		</div>
+	</div>
+
+<br>
+<br>
+<hr color="yellow">
+<br>
+<br>
+<h8>Links won't work as the site is in development</h8>
+</body>
+</html>
